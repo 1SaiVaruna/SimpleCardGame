@@ -24,7 +24,7 @@ namespace SimpleCardGame
 
         public void ShowHand()
         {
-            Console.WriteLine($"{name}'s hand: ");
+            Console.WriteLine($"\n{name}'s hand: ");
             foreach (Card card in hand)
             {
                 Console.WriteLine(card);
@@ -38,6 +38,8 @@ namespace SimpleCardGame
             {
                 score += card.Value();
             }
+
+            Console.WriteLine($"{name}'s score: {score}\n");
         }
     }
 }
